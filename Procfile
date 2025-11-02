@@ -1,2 +1,2 @@
 web: uvicorn src.${REMOTE_SERVER_TRANSPORT_MODULE:-streamable_http_server}:app --host=0.0.0.0 --port=${PORT:-8000} --workers=${WEB_CONCURRENCY:-1}
-mcp_heroku_tools: python -m src.stdio_server
+mcp_doc_reader: python -m src.stdio_server
